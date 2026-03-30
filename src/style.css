@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding:0;
+}
+#root{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+#main_title{
+    justify-self: center;
+    padding-top: 20px;
+}
+
+#new_task_container{
+    height: 75px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    width: 600px;
+    display: flex;
+    justify-self: center;
+    border: 0.5px solid grey;
+}
+#task_input{
+    height: 75px;
+    width: 450px;
+    background-color: hsla(0, 0%, 96%, 0.435);
+    font-size: 24px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+#add_task_cancel{
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    color: white;
+    border-color: grey;
+    font-size: 24px;
+}
+#add_task_tick{
+    height: 75px;
+    width: 75px;
+    background-color: green;
+    color: white;
+    border-color: grey;
+    font-size: 24px;
+}
+
+#task_container{
+    height: 500px;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-self: center;
+    display: flex;
+}
+
+#card_container{
+    min-width: 580px;
+    min-height: 80px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    align-self: center;
+}
+
+#task_container.empty_task_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-weight: 500;
+}
+#task_container.non_empty_task_container{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: grey;
+    font-weight: 500;
+}
