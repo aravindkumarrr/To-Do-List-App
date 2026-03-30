@@ -49,8 +49,8 @@ function App() {
   return (
     <>
       <Title />
-      <NewTaskContainer task_list={task_list} setTask_List={setTask_List} />
-      <TaskContainer task_list={task_list} />
+      <NewTaskContainer task_list={task_list} setTask_List={setTask_List}/>
+      <TaskContainer task_list={task_list}/>
     </>
   );
 }
